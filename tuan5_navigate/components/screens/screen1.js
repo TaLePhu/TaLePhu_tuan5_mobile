@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, Image, TouchableOpacity, Button } from 'react-native';
 
-export default function HomeScreen({navigation}) {
+export default function HomeScreen({navigation, route}) {
   return (
     <View style = {styles.container}>
       <View style = {styles.view1}>
@@ -56,7 +56,7 @@ export default function HomeScreen({navigation}) {
       <View style={styles.view6}>
         <TouchableOpacity style={styles.chooseBtn}
           onPress={()=> {navigation.navigate("Screen2", {
-              
+              colors: ['#C5F1FB', '#F30D0D', '#000000', '#234896'],
             });
           }}
         >
